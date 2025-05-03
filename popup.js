@@ -1,6 +1,6 @@
 function initJokePopup() {
   const button = document.getElementById("button");
-  if (!button) return setTimeout(initJokePopup, 100); // wait and retry
+  if (!button) return setTimeout(initJokePopup, 100);
 
   button.addEventListener("click", function () {
     const existingPopup = document.getElementById("popup");
@@ -52,5 +52,4 @@ function initJokePopup() {
   });
 }
 
-// Call it
 initJokePopup();
