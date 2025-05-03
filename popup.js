@@ -1,6 +1,7 @@
-function initJokePopup() {
+window.Webflow ||= [];
+window.Webflow.push(() => {
   const button = document.getElementById("button");
-  if (!button) return setTimeout(initJokePopup, 100);
+  if (!button) return;
 
   button.addEventListener("click", function () {
     const existingPopup = document.getElementById("popup");
@@ -50,6 +51,4 @@ function initJokePopup() {
       popup.remove();
     });
   });
-}
-
-initJokePopup();
+});
